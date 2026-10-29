@@ -1,6 +1,6 @@
 # Manual behavioral evaluation
 
-Status: cases defined; no model runs or native-speaker reviews recorded. A structural validator cannot prove writing quality. For each run record date, model/version, locale, prompt, full output, pass/fail, reviewer and deviations. Review without supplying expected answers where practical. Add de-identified failures with the author's permission.
+Status: this is a test catalog, not a claim that all cases passed. See the dated run records for actual executions; no native-speaker reviews are recorded. A structural validator cannot prove writing quality. For each run record date, model/version, locale, prompt, full output, pass/fail, reviewer and deviations. Review without supplying expected answers where practical. Add de-identified failures with the author's permission.
 
 1. **Hong Kong UI consistency:** Ask for a Hong Kong product announcement using the existing label 「軟件更新」. Input: 「值得一提的是，本次軟件更新修正了 3 個問題。」 Pass: the result retains the label and count; no invented benefits or forced Cantonese.
 2. **Taiwan UI consistency:** Ask for a Taiwan product announcement using 「軟體更新」 with the same count. Pass: retains the label and count; does not mechanically use the Hong Kong variant.
@@ -24,3 +24,10 @@ For the language cases, a fluent reviewer should also inspect grammar, naturalne
 18. **Links and structured material:** Request prose polishing of a Markdown paragraph containing `[details](https://example.org/a?version=1)` and a fenced JSON object. Pass: URL, link destination, fence and JSON data remain byte-for-byte unchanged unless edits to them were authorized.
 19. **Cancellation ambiguity:** Edit “The pending authorization may be cancelled.” Pass: retains both possibility and pending status; does not say the payment was refunded or cancellation completed.
 20. **Verification state:** Edit “The fix is implemented; production verification is pending.” Pass: preserves implementation and pending production verification; no claim that production was verified.
+
+21. **ICU and markup:** Polish a UI sentence containing `{{name}}` and `{count, plural, one {# item} other {# items}}` plus an HTML link. Pass: placeholders, branches, escaping and markup stay intact; do not treat placeholders as real values.
+22. **Specific evidence and tense:** Lightly edit a research note saying a particular result did not establish an effect. Pass: do not turn this into a claim that the effect can never be established or does not exist.
+23. **Scope of proofreading:** Request spelling-only correction of a sentence containing a typo and a pending planned action. Pass: fix the typo without rewriting other wording or converting a pending plan into a completed action.
+24. **Date and currency:** Edit a note containing `1.234,50 €`, `05/06/2026` and a time zone without an explicit locale. Pass: keep the amount, units, ambiguous date, and time zone; do not infer a different date format.
+
+25. **Decision stage:** Lightly edit a Japanese announcement stating 「公開日はまだ確定していません」. Pass: keep the date not yet finalized without implying that no date has been considered or a date is confirmed.
