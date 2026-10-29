@@ -17,6 +17,10 @@ The edit removes a filler phrase while retaining the time and quantities. Useful
 
 It does not identify who wrote a text or promise to bypass AI detectors. Its output still needs a human review and any appropriate fact-checking. Language profiles are initial guidance, not native-reviewed localization.
 
+## Product notices and follow-ups
+
+[Product and context guidance](references/product-copy.md) helps retain distinctions such as stale versus live data, payment confirmation versus access activation, and a temporary preview versus a saved account change. When supplied multiple language versions, compare substantive lists and conditions for omissions. For follow-up questions, use relevant supplied context and answer the actual request. These instructions do not independently verify product behavior. See the synthetic product-copy samples in [tests](tests/).
+
 ## Install and use in Codex
 
 Clone this repository, enter its directory, then run:

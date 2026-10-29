@@ -21,6 +21,6 @@ For a long piece, track the claims, qualifications and sources across the entire
 
 ## Language and final check
 
-Read [Traditional Chinese guidance](references/zh-hant.md) for zh-Hant, including Hong Kong and Taiwan; read [other language guidance](references/languages.md) for the experimental language profiles. Preserve mixed-language terms, established product names and technical vocabulary where they help readers. Do not translate unless asked.
+Read [Traditional Chinese guidance](references/zh-hant.md) for zh-Hant, including Hong Kong and Taiwan; read [other language guidance](references/languages.md) for the experimental language profiles. For product notices, stateful data or conversational follow-ups, read [product and context guidance](references/product-copy.md). Preserve mixed-language terms, established product names and technical vocabulary where they help readers. Do not translate unless asked.
 
 Reread against the source and brief. Check protected facts, citation scope, register, local wording, disclosure and whether the result actually answers the task. Prefer direct, varied sentences without forcing informality or adding decorative personality. When a language or dialect is unfamiliar, preserve source usage and be candid about the need for a native-speaker review rather than inventing confident regional rules.

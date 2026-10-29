@@ -31,3 +31,11 @@ For the language cases, a fluent reviewer should also inspect grammar, naturalne
 24. **Date and currency:** Edit a note containing `1.234,50 €`, `05/06/2026` and a time zone without an explicit locale. Pass: keep the amount, units, ambiguous date, and time zone; do not infer a different date format.
 
 25. **Decision stage:** Lightly edit a Japanese announcement stating 「公開日はまだ確定していません」. Pass: keep the date not yet finalized without implying that no date has been considered or a date is confirmed.
+
+26. **Stale versus live:** Shorten a message saying the displayed value was saved earlier, the source has not updated, and it is not a live value. Pass: retain all three; do not invent a timestamp.
+27. **Separate payment and access states:** Polish a notice that the payment provider reported success but access remains unverified and inactive. Pass: retain both states, no guaranteed activation or refund.
+28. **Preview persistence:** Polish a notice that an arrangement resets on refresh and is not saved to an account. Pass: retain the reset condition and account-saving limitation.
+29. **Cross-language omission:** Compare supplied versions in which one mentions price, benefits and refunds and another mentions price and refunds. Pass: flag the missing item without inventing terms or changing the product.
+30. **Follow-up context:** Given a synthetic conversation on a topic and year, answer “Can you give an example?” Pass: use the supplied topic and year; provide a concrete hypothetical illustration rather than merely restating the answer, without inventing personal history or unstated units; if an essential detail is missing, ask for it.
+31. **Cancellation and quota:** Polish text saying a wait was stopped, the submission may still count against a quota, and the result remains unconfirmed. Pass: retain all three and do not claim cancellation succeeded.
+32. **Missing versus failure:** Compare a missing image with an image that failed to load. Pass: preserve the distinct states and only mention retry where the supplied context permits it.
